@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ore Eaters – Pixel-Art Asteroid Mining &amp; Ship Building</title>
+<meta name="description" content="Pixel-art asteroid mining game. Cut rock, sell ore, build modular ships, dodge pirates and race an alien swarm for the galaxy. Free demo, play in your browser.">
+<meta property="og:title" content="Ore Eaters – Pixel-Art Asteroid Mining &amp; Ship Building">
+<meta property="og:description" content="Cut rock, sell ore, build modular ships, dodge pirates and race an alien swarm for the galaxy. Free demo, play in your browser.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://studiohorseface.github.io/ore-eaters/">
+<meta property="og:image" content="https://studiohorseface.github.io/ore-eaters/img/frameworld.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="play/index.icon.png">
+<style>
+@font-face { font-family: "Pixel"; src: url("pixel.ttf") format("truetype"); font-display: swap; }
+:root {
+	--bg: #04050b; --panel: #121420; --edge: #59667f; --gold: #ffd94d; --text: #e6e9f0; --dim: #b3bdd1; --red: #ff7366;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--text); }
+body {
+	font: 18px/1.55 "Pixel", ui-monospace, monospace;
+	background-image: radial-gradient(1px 1px at 20% 30%, #fff8 50%, transparent 51%),
+		radial-gradient(1px 1px at 70% 80%, #fff6 50%, transparent 51%),
+		radial-gradient(1px 1px at 45% 60%, #fff5 50%, transparent 51%),
+		radial-gradient(1px 1px at 85% 15%, #fff7 50%, transparent 51%);
+	background-size: 230px 230px, 310px 310px, 170px 170px, 270px 270px;
+}
+main { max-width: 1040px; margin: 0 auto; padding: 48px 16px 64px; }
+h1 { font-size: clamp(44px, 9vw, 84px); line-height: 1; color: var(--gold); margin: 0 0 12px; letter-spacing: 2px; }
+.tag { color: var(--dim); margin: 0 0 28px; font-size: 20px; }
+.buttons { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 36px; }
+.button {
+	display: inline-block; padding: 14px 28px; border: 2px solid var(--edge); background: var(--panel);
+	color: var(--text); text-decoration: none; font-size: 22px;
+}
+.button.play { border-color: var(--gold); color: var(--gold); }
+.button:hover, .button:focus-visible { border-color: var(--gold); color: var(--gold); outline: none; }
+.hero { width: 100%; display: block; border: 2px solid var(--edge); image-rendering: pixelated; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin: 16px 0 40px; }
+.grid img { width: 100%; display: block; border: 2px solid var(--edge); image-rendering: pixelated; }
+h2 { color: var(--gold); font-size: 28px; margin: 40px 0 10px; }
+p { margin: 0 0 14px; max-width: 72ch; }
+ul { padding-left: 22px; margin: 0 0 14px; }
+li { margin-bottom: 6px; }
+.note { color: var(--dim); font-size: 15px; }
+footer { color: var(--dim); font-size: 14px; border-top: 2px solid var(--panel); margin-top: 48px; padding-top: 16px; }
+a { color: var(--gold); }
+@media (max-width: 600px) { body { font-size: 16px; } .button { width: 100%; text-align: center; } }
+</style>
+</head>
+<body>
+<main>
+	<h1>ORE EATERS</h1>
+	<p class="tag">Dig it out. Haul it home. Hold the line.</p>
+	<div class="buttons">
+		<a class="button play" href="play/">Play in your browser</a>
+		<a class="button" href="https://studiohorseface.itch.io/ore-eaters">Windows &amp; Mac on itch.io</a>
+	</div>
+	<img class="hero" src="img/frameworld.png" alt="Big modular ships with violet mining lasers cutting asteroids" width="1280" height="720">
+
+	<h2>A pixel-art asteroid mining game</h2>
+	<p>Start a mining company with one beat-up ship and 5,000 credits. Laser asteroids apart, haul the ore home and
+	sell it, then put your profits into bigger ships, built piece by piece on a grid: bows, hulls, hubs and engines in
+	T, L and cross shapes.</p>
+	<p>The galaxy doesn't wait for you. Rival factions grow rich and fly ships of their own design. Black Tally pirate gangs
+	demand tolls. Law patrols hunt troublemakers. And an alien swarm is eating its way through the sectors, rock by rock.</p>
+
+	<div class="grid">
+		<img src="img/frames.png" alt="The frame yard: building a modular ship on a grid" width="1280" height="720" loading="lazy">
+		<img src="img/factions.png" alt="Pirates, an escort and a law patrol trading threats on the radio" width="1280" height="720" loading="lazy">
+		<img src="img/swarm.png" alt="The alien swarm nesting among the asteroids" width="1280" height="720" loading="lazy">
+	</div>
+
+	<h2>In the demo</h2>
+	<ul>
+		<li>Mine, trade and upgrade in a living galaxy full of radio chatter</li>
+		<li>Build modular ships on a grid. Lose one and it's gone for good</li>
+		<li>Warp gates with fares set by whoever owns the sector</li>
+		<li>Pirates, bounties, law patrols and faction fleets</li>
+		<li>Keyboard or gamepad, free in your browser or on Windows</li>
+	</ul>
+	<p class="note">The browser version saves in your browser, so use the same browser to continue. It works best in desktop
+	Chrome, Edge, Firefox or Safari.</p>
+
+	<footer><a href="../">More from Horse Face</a> · Ore Eaters is an early demo. Font under the <a href="OFL.txt">SIL Open Font License</a>.</footer>
+</main>
+</body>
+</html>
