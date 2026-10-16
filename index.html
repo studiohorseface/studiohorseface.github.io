@@ -24,7 +24,7 @@ h2 { font-size: 26px; margin: 0 0 16px; }
 .games { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
 .game { display: block; background: var(--panel); border: 2px solid var(--edge); color: var(--text); text-decoration: none; }
 .game:hover, .game:focus-visible { border-color: var(--accent); outline: none; }
-.game img { width: 100%; height: auto; display: block; aspect-ratio: 16 / 9; object-fit: cover; image-rendering: pixelated; }
+.game img, .game video { width: 100%; height: auto; display: block; aspect-ratio: 16 / 9; object-fit: cover; image-rendering: pixelated; }
 .game .info { padding: 14px 16px 16px; }
 .game h3 { margin: 0 0 6px; font-size: 24px; color: var(--accent); }
 .game p { margin: 0 0 10px; color: var(--dim); font-size: 16px; }
@@ -41,7 +41,8 @@ a { color: var(--accent); }
 	<h2>Games</h2>
 	<div class="games">
 		<a class="game" href="ore-eaters/">
-			<img src="ore-eaters/img/frameworld.png" alt="Ore Eaters: modular ships cutting asteroids with mining lasers" width="1280" height="720">
+			<video src="ore-eaters/video/fleet.mp4" poster="ore-eaters/img/clean.png" width="1280" height="720" autoplay muted loop playsinline
+				aria-label="Ore Eaters: a modular ship cutting asteroids with mining lasers"></video>
 			<div class="info">
 				<h3>Ore Eaters</h3>
 				<p>Asteroid mining, modular ship building, pirates and an alien swarm. Free demo.</p>
