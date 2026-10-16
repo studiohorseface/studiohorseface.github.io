@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Horse Face – Indie Games</title>
+<meta name="description" content="Horse Face is a tiny indie game studio making pixel-art games. Play Ore Eaters, an asteroid mining and ship building game, free in your browser.">
+<meta property="og:title" content="Horse Face – Indie Games">
+<meta property="og:description" content="A tiny indie studio making pixel-art games. Play Ore Eaters free in your browser.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://studiohorseface.github.io/">
+<meta property="og:image" content="https://studiohorseface.github.io/ore-eaters/img/frameworld.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+@font-face { font-family: "Pixel"; src: url("fonts/pixel.ttf") format("truetype"); font-display: swap; }
+:root { --bg: #0b0a10; --panel: #17151f; --edge: #4a4560; --accent: #ffd94d; --text: #ece9f2; --dim: #b4adc6; }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--text); }
+body { font: 18px/1.55 "Pixel", ui-monospace, monospace; }
+main { max-width: 1040px; margin: 0 auto; padding: 56px 16px 64px; }
+h1 { font-size: clamp(44px, 9vw, 76px); line-height: 1; margin: 0 0 10px; color: var(--accent); letter-spacing: 2px; }
+.tag { color: var(--dim); margin: 0 0 40px; font-size: 20px; }
+h2 { font-size: 26px; margin: 0 0 16px; }
+.games { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+.game { display: block; background: var(--panel); border: 2px solid var(--edge); color: var(--text); text-decoration: none; }
+.game:hover, .game:focus-visible { border-color: var(--accent); outline: none; }
+.game img { width: 100%; display: block; aspect-ratio: 16 / 9; object-fit: cover; image-rendering: pixelated; }
+.game .info { padding: 14px 16px 16px; }
+.game h3 { margin: 0 0 6px; font-size: 24px; color: var(--accent); }
+.game p { margin: 0 0 10px; color: var(--dim); font-size: 16px; }
+.game .cta { color: var(--text); font-size: 16px; }
+footer { color: var(--dim); font-size: 14px; border-top: 2px solid var(--panel); margin-top: 56px; padding-top: 16px; }
+a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+	<h1>HORSE FACE</h1>
+	<p class="tag">A tiny indie studio making pixel-art games.</p>
+
+	<h2>Games</h2>
+	<div class="games">
+		<a class="game" href="ore-eaters/">
+			<img src="ore-eaters/img/frameworld.png" alt="Ore Eaters: modular ships cutting asteroids with mining lasers" width="1280" height="720">
+			<div class="info">
+				<h3>Ore Eaters</h3>
+				<p>Asteroid mining, modular ship building, pirates and an alien swarm. Free demo.</p>
+				<span class="cta">Play in your browser &rarr;</span>
+			</div>
+		</a>
+	</div>
+
+	<footer>&copy; Horse Face. Font under the <a href="fonts/OFL.txt">SIL Open Font License</a>.</footer>
+</main>
+</body>
+</html>
