@@ -22,6 +22,9 @@ h1 { font-size: clamp(44px, 9vw, 76px); line-height: 1; margin: 0 0 10px; color:
 .tag { color: var(--dim); margin: 0 0 40px; font-size: 20px; }
 h2 { font-size: 26px; margin: 0 0 16px; }
 .games { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+.slot { display: flex; flex-direction: column; gap: 10px; }
+.play { display: block; text-align: center; background: var(--accent); color: var(--bg); border: 2px solid var(--accent); padding: 10px 16px; font-size: 22px; text-decoration: none; letter-spacing: 1px; }
+.play:hover, .play:focus-visible { background: var(--text); border-color: var(--text); outline: none; }
 .game { display: block; background: var(--panel); border: 2px solid var(--edge); color: var(--text); text-decoration: none; }
 .game:hover, .game:focus-visible { border-color: var(--accent); outline: none; }
 .game img, .game video { width: 100%; height: auto; display: block; aspect-ratio: 16 / 9; object-fit: cover; image-rendering: pixelated; }
@@ -40,15 +43,18 @@ a { color: var(--accent); }
 
 	<h2>Games</h2>
 	<div class="games">
-		<a class="game" href="ore-eaters/">
-			<video src="ore-eaters/video/reel.mp4" poster="ore-eaters/img/clean.png" width="1280" height="720" autoplay muted loop playsinline
-				aria-label="Ore Eaters: a modular ship cutting asteroids with mining lasers"></video>
-			<div class="info">
-				<h3>Ore Eaters</h3>
-				<p>Asteroid mining, modular ship building, pirates and an alien swarm. Free demo.</p>
-				<span class="cta">Play in your browser &rarr;</span>
-			</div>
-		</a>
+		<div class="slot">
+			<a class="play" href="https://studiohorseface.itch.io/ore-eaters">Play now &rarr;</a>
+			<a class="game" href="ore-eaters/">
+				<video src="ore-eaters/video/reel.mp4" poster="ore-eaters/img/clean.png" width="1280" height="720" autoplay muted loop playsinline
+					aria-label="Ore Eaters: a modular ship cutting asteroids with mining lasers"></video>
+				<div class="info">
+					<h3>Ore Eaters</h3>
+					<p>Asteroid mining, modular ship building, pirates and an alien swarm. Free demo.</p>
+					<span class="cta">Click to see more...</span>
+				</div>
+			</a>
+		</div>
 	</div>
 
 	<footer>&copy; Studio Horse Face. Font under the <a href="fonts/OFL.txt">SIL Open Font License</a>.</footer>
