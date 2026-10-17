@@ -32,6 +32,7 @@ h2 { font-size: 26px; margin: 0 0 16px; }
 .game h3 { margin: 0 0 6px; font-size: 24px; color: var(--accent); }
 .game p { margin: 0 0 10px; color: var(--dim); font-size: 16px; }
 .game .cta { color: var(--text); font-size: 16px; }
+.ghost { display: flex; align-items: center; justify-content: center; min-height: 200px; border: 2px dashed var(--edge); color: var(--dim); font-size: 24px; opacity: .85; }
 footer { color: var(--dim); font-size: 14px; border-top: 2px solid var(--panel); margin-top: 56px; padding-top: 16px; }
 a { color: var(--accent); }
 </style>
@@ -41,20 +42,21 @@ a { color: var(--accent); }
 	<h1>STUDIO HORSE FACE</h1>
 	<p class="tag">A tiny indie studio making pixel-art games.</p>
 
-	<h2>Games</h2>
+	<h2>Game(s)</h2>
 	<div class="games">
 		<div class="slot">
-			<a class="play" href="https://studiohorseface.itch.io/ore-eaters">Play now &rarr;</a>
 			<a class="game" href="ore-eaters/">
 				<video src="ore-eaters/video/reel.mp4" poster="ore-eaters/img/clean.png" width="1280" height="720" autoplay muted loop playsinline
 					aria-label="Ore Eaters: a modular ship cutting asteroids with mining lasers"></video>
 				<div class="info">
 					<h3>Ore Eaters</h3>
-					<p>Asteroid mining, modular ship building, pirates and an alien swarm. Free demo.</p>
+					<p>Asteroid mining, modular ship building, pirates and an alien swarm. Free demo, no signup or login needed.</p>
 					<span class="cta">Click to see more...</span>
 				</div>
 			</a>
+			<a class="play" href="https://studiohorseface.itch.io/ore-eaters">Play now &rarr;</a>
 		</div>
+		<div class="ghost">More to come</div>
 	</div>
 
 	<footer>&copy; Studio Horse Face. Font under the <a href="fonts/OFL.txt">SIL Open Font License</a>.</footer>
